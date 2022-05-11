@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[T_Model_Model_Types]
+(
+	[Id] UNIQUEIDENTIFIER NOT NULL PRIMARY KEY, 
+    [Model_Id] UNIQUEIDENTIFIER NULL, 
+    [Model_Type_Id] UNIQUEIDENTIFIER NULL
+)

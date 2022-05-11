@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[T_Wargear]
+(
+	[Id] UNIQUEIDENTIFIER NOT NULL PRIMARY KEY, 
+    [Name] NVARCHAR(50) NULL, 
+    [Fluff] NVARCHAR(MAX) NULL, 
+    [Rules] NVARCHAR(MAX) NULL
+)

@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[T_Rules]
+(
+	[Id] UNIQUEIDENTIFIER NOT NULL PRIMARY KEY, 
+    [Rule_Type] NVARCHAR(50) NULL, 
+    [Rule_Category_Id] UNIQUEIDENTIFIER NULL, 
+    [Name] NVARCHAR(50) NULL, 
+    [Text] NVARCHAR(MAX) NULL, 
+    [Fluff] NVARCHAR(MAX) NULL
+)

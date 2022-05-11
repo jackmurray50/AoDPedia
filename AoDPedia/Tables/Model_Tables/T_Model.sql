@@ -1,0 +1,5 @@
+﻿CREATE TABLE [dbo].[T_Model]
+(
+	[Id] UNIQUEIDENTIFIER NOT NULL PRIMARY KEY, 
+    [Name] NCHAR(10) NULL 
+)

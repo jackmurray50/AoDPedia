@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[T_Unit]
+(
+	[Id] UNIQUEIDENTIFIER NOT NULL PRIMARY KEY, 
+    [Name] UNIQUEIDENTIFIER NULL, 
+    [Cost] INT NULL, 
+    [Fluff] NVARCHAR(MAX) NULL
+)

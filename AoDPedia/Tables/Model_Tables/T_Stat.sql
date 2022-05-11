@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[T_Stat]
+(
+	[Id] UNIQUEIDENTIFIER NOT NULL PRIMARY KEY, 
+    [Name] NVARCHAR(50) NULL, 
+    [SortOrder] INT NULL
+)

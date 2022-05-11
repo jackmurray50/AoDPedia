@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="d7ef4b17-270d-498d-921f-8473f20cffe2" ChangeDateTime="05/10/2022 18:40:33">
+    <Property Name="ElementName" Value="[dbo].[T_Weapon].[Range]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[T_Weapon]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Name" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a2663e30-ba6d-4457-b512-1a85fd892893" ChangeDateTime="05/10/2022 19:00:08">
+    <Property Name="ElementName" Value="[dbo].[T_Model_Types].[Type]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[T_Model_Types]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Name" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3be975ee-a3bd-4375-ab23-c2ca1a29948e" ChangeDateTime="05/10/2022 19:57:34">
+    <Property Name="ElementName" Value="[dbo].[T_Rite_Of_War].[Fluff]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[T_Rite_Of_War]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Army_Id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="7d5675ec-ec17-4bf7-bd37-c64c78ffd412" ChangeDateTime="05/10/2022 19:58:00">
+    <Property Name="ElementName" Value="[dbo].[T_Rite_Of_War].[Description]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[T_Rite_Of_War]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Benefits" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d3f25d63-f579-40aa-8c91-1f00808d21d9" ChangeDateTime="05/10/2022 20:03:32">
+    <Property Name="ElementName" Value="[dbo].[T_Rite_Of_War].[Limitaiton]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[T_Rite_Of_War]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Limitaitons" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="03073eb7-c88d-4621-a765-032e98cdc1e7" ChangeDateTime="05/10/2022 20:03:55">
+    <Property Name="ElementName" Value="[dbo].[T_Rite_Of_War].[Limitaitons]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[T_Rite_Of_War]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Limitations" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9efb5807-47e1-446a-811a-2b1677505ed8" ChangeDateTime="05/10/2022 20:05:01">
+    <Property Name="ElementName" Value="[dbo].[T_Rules].[Test]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[T_Rules]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Text" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6a79b9c7-d140-4170-8114-3d5fddb64866" ChangeDateTime="05/10/2022 20:21:28">
+    <Property Name="ElementName" Value="[dbo].[T_Unit].[Nam]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[T_Unit]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Name" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="fa6a6258-b47e-4403-8339-f3454dfb16b0" ChangeDateTime="05/10/2022 20:24:34">
+    <Property Name="ElementName" Value="[dbo].[T_Unit_Option_Model].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[T_Unit_Option_Model]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="uniq" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e27dcb02-5075-4502-ab64-5c0a83cf571d" ChangeDateTime="05/10/2022 20:24:35">
+    <Property Name="ElementName" Value="[dbo].[T_Unit_Option_Model].[uniq]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[T_Unit_Option_Model]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d69ee995-4c3c-454a-9456-0f77fef34d7c" ChangeDateTime="05/10/2022 23:43:30">
+    <Property Name="ElementName" Value="[dbo].[T_Unit_Option_Weapon].[Weapon_Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[T_Unit_Option_Weapon]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Unit_Id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="00f8aa83-6a96-490e-beee-9e7a43ea8eaa" ChangeDateTime="05/10/2022 23:46:56">
+    <Property Name="ElementName" Value="[dbo].[T_Unit_Composition_Models].[unit_Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[T_Unit_Composition_Models]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Unit_Id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="bf2d73f8-ffc1-4fe4-9ebb-3fbe2a6ef49b" ChangeDateTime="05/10/2022 23:49:03">
+    <Property Name="ElementName" Value="[dbo].[T_Rules].[Parent_Rule_Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[T_Rules]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Category_Id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b3ba162b-ea81-4b06-a826-0a6fd80901e7" ChangeDateTime="05/10/2022 23:49:18">
+    <Property Name="ElementName" Value="[dbo].[T_Rules].[Category_Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[T_Rules]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Rule_Category_Id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e3f8e352-1a92-4967-acc2-7f335383836d" ChangeDateTime="05/10/2022 23:49:43">
+    <Property Name="ElementName" Value="[dbo].[T_Rule_Category].[Name]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[T_Rule_Category]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Parent_Id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="1e73e707-c276-4606-9d2a-948a3fd17002" ChangeDateTime="05/10/2022 23:56:47">
+    <Property Name="ElementName" Value="[dbo].[T_Unit_Composition_Wargear].[count]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[T_Unit_Composition_Wargear]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Count" />
+  </Operation>
+</Operations>

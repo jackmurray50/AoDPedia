@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[T_Model_Wargear]
+(
+	[Id] INT NOT NULL PRIMARY KEY, 
+    [Model_Id] UNIQUEIDENTIFIER NULL, 
+    [Wargear_Id] UNIQUEIDENTIFIER NULL
+)

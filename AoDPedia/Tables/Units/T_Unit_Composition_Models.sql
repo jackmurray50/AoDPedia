@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[T_Unit_Composition_Models]
+(
+	[Id] UNIQUEIDENTIFIER NOT NULL PRIMARY KEY, 
+    [Unit_Id] UNIQUEIDENTIFIER NULL, 
+    [Model_Id] UNIQUEIDENTIFIER NULL, 
+    [Count] INT NULL
+)

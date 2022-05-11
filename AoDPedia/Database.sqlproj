@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>Database</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{9984ba57-d0d3-4245-be84-a73541e1a003}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>AoDPedia</RootNamespace>
+    <AssemblyName>AoDPedia</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="Tables" />
+    <Folder Include="Tables\Model_Tables" />
+    <Folder Include="Tables\Model_Tables\LinkingTables" />
+    <Folder Include="Tables\Wargear" />
+    <Folder Include="Tables\Armies" />
+    <Folder Include="Tables\Units" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Tables\Model_Tables\T_Model_Types.sql" />
+    <Build Include="Tables\Model_Tables\T_Model_Special_Rules.sql" />
+    <Build Include="Tables\Model_Tables\LinkingTables\T_Model_Model_Types.sql" />
+    <Build Include="Tables\Model_Tables\LinkingTables\T_Model_Special_Rules.sql" />
+    <Build Include="Tables\Wargear\T_Weapon.sql" />
+    <Build Include="Tables\Model_Tables\LinkingTables\T_Model_Weapons.sql" />
+    <Build Include="Tables\Wargear\T_Wargear.sql" />
+    <Build Include="Tables\Model_Tables\LinkingTables\T_Model_Wargear.sql" />
+    <Build Include="Tables\T_Rules.sql" />
+    <Build Include="Tables\Armies\T_Army.sql" />
+    <Build Include="Tables\Armies\T_Rite_Of_War.sql" />
+    <Build Include="Tables\Armies\T_Warlord_Traits.sql" />
+    <Build Include="Tables\Armies\T_Army_Unit.sql" />
+    <Build Include="Tables\Units\T_Unit.sql" />
+    <Build Include="Tables\Units\T_Unit_Option_Model.sql" />
+    <Build Include="Tables\Units\T_Unit_Option_Weapon.sql" />
+    <Build Include="Tables\Units\T_Unit_Option_Wargear.sql" />
+    <Build Include="Tables\Units\T_Unit_Composition_Models.sql" />
+    <Build Include="Tables\T_Rule_Category.sql" />
+    <Build Include="Tables\Model_Tables\T_Stat.sql" />
+    <Build Include="Tables\Model_Tables\LinkingTables\T_Model_Stats.sql" />
+    <Build Include="Tables\Units\T_Unit_Composition_Weapon.sql" />
+    <Build Include="Tables\Units\T_Unit_Composition_Wargear.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Tables\Model_Tables\T_Model.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="AoDPedia.refactorlog" />
+  </ItemGroup>
+</Project>

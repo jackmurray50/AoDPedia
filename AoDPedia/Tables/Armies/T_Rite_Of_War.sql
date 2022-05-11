@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[T_Rite_Of_War]
+(
+	[Id] UNIQUEIDENTIFIER NOT NULL PRIMARY KEY, 
+    [Name] NCHAR(10) NULL, 
+    [Army_Id] UNIQUEIDENTIFIER NULL, 
+    [Fluff] NVARCHAR(MAX) NULL, 
+    [Benefits] NVARCHAR(MAX) NULL, 
+    [Limitations] NVARCHAR(MAX) NULL
+)
