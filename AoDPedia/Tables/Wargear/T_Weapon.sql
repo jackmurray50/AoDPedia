@@ -6,5 +6,7 @@
     [Strength] NCHAR(10) NULL, 
     [AP] NCHAR(10) NULL, 
     [Type] NCHAR(10) NULL, 
-    [Special Rules] NCHAR(10) NULL
+    [Army_Id] UNIQUEIDENTIFIER NULL, 
+    [Source_Id] UNIQUEIDENTIFIER NULL, 
+    [Source_Page] INT NULL
 )
