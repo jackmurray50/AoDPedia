@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31911.196
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Database", "Database.sqlproj", "{9984BA57-D0D3-4245-BE84-A73541E1A003}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AoDPedia_Site", "..\AoDPedia_Site\AoDPedia_Site.csproj", "{92DA9B2E-4B8B-4034-95FD-C896CAB78BF8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AoDPedia_Site", "..\AoDPedia_Site\AoDPedia_Site.csproj", "{9E3CFC7B-4B03-44DB-BE81-69FF071E64CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,10 +19,10 @@ Global
 		{9984BA57-D0D3-4245-BE84-A73541E1A003}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9984BA57-D0D3-4245-BE84-A73541E1A003}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9984BA57-D0D3-4245-BE84-A73541E1A003}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{92DA9B2E-4B8B-4034-95FD-C896CAB78BF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{92DA9B2E-4B8B-4034-95FD-C896CAB78BF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{92DA9B2E-4B8B-4034-95FD-C896CAB78BF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{92DA9B2E-4B8B-4034-95FD-C896CAB78BF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E3CFC7B-4B03-44DB-BE81-69FF071E64CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E3CFC7B-4B03-44DB-BE81-69FF071E64CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E3CFC7B-4B03-44DB-BE81-69FF071E64CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E3CFC7B-4B03-44DB-BE81-69FF071E64CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
