@@ -112,4 +112,32 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="Count" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="5f352432-262f-4d67-8223-2e2caa635267" ChangeDateTime="05/11/2022 21:08:35">
+    <Property Name="ElementName" Value="[dbo].[T_Model].[Source Page]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[T_Model]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Source_Page" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3183fef3-d310-4726-bce9-41b83252ff96" ChangeDateTime="05/11/2022 23:26:15">
+    <Property Name="ElementName" Value="[dbo].[T_Stat].[SortOrder]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[T_Stat]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Sort_Order" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d24a918e-3c09-45ae-8186-37eeb7e32b83" ChangeDateTime="05/11/2022 23:28:06">
+    <Property Name="ElementName" Value="[dbo].[T_Model].[Strenght]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[T_Model]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Strength" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="dbaae95d-da55-4aa5-9cae-afc9fe169809" ChangeDateTime="05/11/2022 23:29:05">
+    <Property Name="ElementName" Value="[dbo].[T_Model].[LEadership]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[T_Model]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Leadership" />
+  </Operation>
 </Operations>

@@ -1,7 +1,0 @@
-﻿CREATE TABLE [dbo].[T_Model_Stats]
-(
-	[Id] INT NOT NULL PRIMARY KEY, 
-    [Model_Id] UNIQUEIDENTIFIER NULL, 
-    [Stat_Id] UNIQUEIDENTIFIER NULL, 
-    [Value] INT NULL
-)
