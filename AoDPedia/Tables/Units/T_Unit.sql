@@ -1,8 +1,9 @@
 ﻿CREATE TABLE [dbo].[T_Unit]
 (
 	[Id] UNIQUEIDENTIFIER NOT NULL PRIMARY KEY, 
-    [Name] UNIQUEIDENTIFIER NULL, 
+    [Name] NVARCHAR(MAX) NULL, 
     [Cost] INT NULL, 
+    [Role] NVARCHAR(25) NULL,
     [Fluff] NVARCHAR(MAX) NULL, 
     [Source] UNIQUEIDENTIFIER NULL, 
     [Source_Page] INT NULL

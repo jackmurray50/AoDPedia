@@ -63,6 +63,7 @@
     <Folder Include="Tables\Armies" />
     <Folder Include="Tables\Units" />
     <Folder Include="Data" />
+    <Folder Include="Sprocs" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\Model_Tables\T_Model_Types.sql" />
@@ -87,6 +88,9 @@
     <Build Include="Tables\Units\T_Unit_Composition_Weapon.sql" />
     <Build Include="Tables\Units\T_Unit_Composition_Wargear.sql" />
     <Build Include="Tables\T_Source.sql" />
+    <Build Include="Sprocs\SpPopulateBookData.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Build>
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\Model_Tables\T_Model.sql" />
@@ -96,5 +100,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Data\T_Rule_Category.csv" />
+    <None Include="Data\Source.csv" />
+    <None Include="Data\Units.csv" />
   </ItemGroup>
 </Project>

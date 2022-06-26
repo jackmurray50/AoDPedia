@@ -1,0 +1,67 @@
+Id,Name,Cost,Role,Fluff,Source,Source_Page
+d69b596b-b830-4707-9bac-35845c672330,Legion Praetor,120,HQ,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,18
+f664f118-e556-4c33-9b27-9d4f489113c0,Legion Cataphractii Praetor,135,HQ,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,20
+917a4776-b28b-48a1-9daa-dd63d7cd18bd,Legion Tartaros Praetor,110,HQ,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,21
+7df1c3cb-4e0f-4ae6-b8f5-bc37d695728c,Legion Centurion,60,HQ,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,22
+00d99b9f-515f-4e7e-916b-bac384111876,Legion Cataphractii Centurion ,85,HQ,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,24
+7c563344-e06d-4812-9ffa-09d64f7e38a5,Legion Tartaros Centurion,75,HQ,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,25
+b6275234-5013-43c3-aea1-2636038d2cb2,Legion Command Squad ,85,HQ,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,26
+19e79242-d38b-4020-a179-7dda2c9d1a01,Legion Cataphractii Command Squad,125,HQ,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,28
+9532fafb-7664-469e-bd06-885ae30d14fc,Legion Tartaros Command Squad,110,HQ,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,29
+62ea7afe-524c-4401-ab50-e67b86870fca,Legion Damocles Command Rhino,150,HQ,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,30
+49bab1a8-d741-4b81-85eb-5efe139fa2ba,Legion Veteran Squad,115,Elite,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,32
+a04c4576-2c16-40a4-8872-e8bebb0a8fb2,Legion Terminator Cataphractii Squad,175,Elite,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,34
+93662297-203e-42d6-ac63-b943ce2cfec7,Legion Terminator Tartaros Squad,150,Elite,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,35
+e22dc2ce-67d8-486a-9df6-5b579500dc96,Legion Destroyer Assault Squad,130,Elite,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,36
+f734c243-86f8-44a8-b914-91a27068f5a8,Legion Mortalis Destroyer Squad,105,Elite,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,37
+19785791-b0ac-4144-80db-ea0d45b81908,Legion Apothecarion Detachment,45,Elite,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,38
+897efbb9-f5dc-4b01-86ef-ad0401e5d0c3,Legion Techmarine Covenant,55,Elite,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,39
+b7bb4576-5734-4342-94da-88f7486dfa12,Legion Contemptor Dreadnought Talon,175,Elite,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,40
+c2d9accf-a970-435b-98bc-b1574661337f,Legion Rapier Battery,40,Elite,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,42
+5a09ff77-67e0-436d-89d0-abc6ed033d20,Legion Tactical Squad,100,Troops,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,44
+26265837-51c8-424d-b64e-e0ff4ca47d44,Legion Despoiler Squad,100,Troops,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,45
+cbb33bef-ac06-49b7-854b-279d17bc74e1,Legion Assault Squad,145,Troops,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,46
+ca52290b-f718-4fbb-9ea2-7b45989c3314,Legion Breacher Squad,155,Troops,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,47
+a788cbbd-46d8-4deb-804d-4f848bd4bd5d,Legion Tactical Support Squad,85,Troops,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,48
+c6d415a3-fe57-4431-b140-540dd1c19770,Legion Reconnaissance Squad,85,Troops,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,49
+94e432e9-96bb-4318-a1e0-f5298a603659,Legion Scout Squad,75,Troops,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,50
+a587eafc-8842-44e3-b537-9d59c6db7928,Legion Rhino Transport,35,Dedicated Transport,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,51
+76ac9b97-05fb-4adf-98a5-1903ec402b4c,Legion Drop Pod,35,Dedicated Transport,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,52
+05572a59-de6f-4d15-a417-a44b693d9860,Legion Dreadnought Drop Pod,100,Dedicated Transport,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,53
+010b8671-7ac7-4096-8412-664801c42271,Legion Termite Assault Drill,80,Dedicated Transport,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,54
+e1659ffe-283c-4219-9d87-36b8c0a5b959,Legion Seeker Squad,105,Fast Attack,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,56
+7daa052d-883b-434a-a56e-d62cf129f640,Legion Outrider Squadron ,85,Fast Attack,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,57
+302bf5e7-d55a-40ac-9026-3601ea3e64c5,Legion Sabre Strike Squadron,80,Fast Attack,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,58
+0efa15ac-e371-40e4-9022-e9be873f3b07,Legion Sky-hunter Squadron,105,Fast Attack,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,59
+d6c1b5ff-149a-4843-ad6b-2e1df503179b,Legion Javelin Squadron,80,Fast Attack,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,60
+d73249e9-099b-4af5-9df9-b7f7d1244663,Legion Proteus Land Speeder Squadron,55,Fast Attack,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,61
+07ba4272-4f60-431d-95d2-8a337b110a1b,Legion Storm Eagle Gunship,210,Fast Attack,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,62
+ad5963af-a02c-4647-a0d7-b8afe0266e3a,Legion Xiphon Interceptor,125,Fast Attack,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,63
+81aa296b-1174-464d-b494-b048a1b53b57,Legion Dreadclaw Drop Pod,115,Fast Attack,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,64
+bd4d975d-44b8-4097-8b5d-b4a93e9ec632,Legion Leviathan Dreadnought Talon,270,Heavy Support,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,66
+5d611cd4-c362-4977-a775-1a1615af71c4,Legion Deredeo Dreadnought Talon,205,Heavy Support,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,67
+4a9ab8f8-74ef-4449-b8f8-3049b8d46c74,Legion Heavy Support Squad,100,Heavy Support,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,68
+d13b2634-b4af-40fe-94fe-67590afab1f6,Legion Predator Squadron ,120,Heavy Support,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,69
+24f7fc9c-7977-4ab3-8016-d72201be32d6,Legion Sicaran Squadron,190,Heavy Support,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,70
+8ff94fcf-2034-4bed-99c8-b3616d4acaa2,Legion Sicaran Arcus Squadron,215,Heavy Support,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,71
+656e5b75-3606-469b-b4f0-49e59725f361,Legion Sicaran Punisher Squadron,190,Heavy Support,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,72
+5380bb2a-3890-4739-b711-1844cf2ddd1a,Legion Sicaran Venator Squadron,200,Heavy Support,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,73
+23aebd96-fd18-41ec-ac60-11841a17a59e,Legion Sicaran Omega Squadron,230,Heavy Support,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,74
+554ff335-fe42-44ae-9088-8d0322c7d9f9,Legion Kratos Squadron ,300,Heavy Support,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,75
+bdb60a7e-99fb-43f6-a384-a9421435667e,Legion Land Raider Proteus Carrier Squadron,220,Heavy Support,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,76
+a8b0d1c4-1c3a-4b0a-bab1-bd6d5092cbce,Legion Land Raider Proteus Explorator,250,Heavy Support,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,77
+66193e33-c0a2-4bf7-817c-1aaec31d6f1d,Legion Vindicator Squadron,120,Heavy Support,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,78
+1e541c99-be60-442a-8e0c-bf5d9fcc3802,Legion Land Raider Spartan,350,Heavy Support,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,79
+b50322b2-b43d-49c1-99f3-2b153108984e,Legion Scorpius Squadron,120,Heavy Support,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,80
+f468737a-bfe6-41a9-9024-840bc7ef09ae,Legion Arquitor Squadron,200,Heavy Support,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,81
+b1031077-b8da-4095-8eb5-b85641a40fb2,Legion Fire Raptor Gunship,280,Heavy Support,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,82
+f8a8cf7b-a767-4828-aed2-e77cb0837d07,Legion Deathstorm Drop Pod Squadron,90,Heavy Support,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,83
+dfeb696f-b4ea-4443-af3d-b6173814617a,Legion Kharybdis Assault Claw,235,Heavy Support,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,84
+874932e1-095c-48cd-8fff-305f06b1f382,Legion Cerberus Squadron,425,Lord of War,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,86
+29ecb7a3-331b-40bc-8f83-98c0021cb890,Legion Typhon Squadron,425,Lord of War,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,87
+bb51857e-f49a-429f-8530-e3985310e072,Legion Glaive,700,Lord of War,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,88
+47bebb66-f1da-4d4f-9817-a628d5244769,Legion Fellblade,650,Lord of War,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,89
+6fba2df7-1094-4049-96d2-90d78322ef8c,Legion Falchion,650,Lord of War,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,90
+f9914bd6-03f0-4448-8e12-52d434937773,Legion Thunderhawk Gunship,685,Lord of War,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,91
+745ab7f8-c84c-437a-b8a5-0eac310b527a,Legion Sokar Stormbird,850,Lord of War,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,92
+4b9ad8d0-3dd3-446b-9479-bfedbaa82d7b,Legion Mastodon,700,Lord of War,,ca4e38e2-c91f-41d9-9362-ed0ce5ecd8f9,93
