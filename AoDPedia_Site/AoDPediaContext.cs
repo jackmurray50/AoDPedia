@@ -22,15 +22,14 @@ namespace AoDPedia_Site
         public virtual DbSet<TModel> TModels { get; set; }
         public virtual DbSet<TModelModelType> TModelModelTypes { get; set; }
         public virtual DbSet<TModelSpecialRule> TModelSpecialRules { get; set; }
-        public virtual DbSet<TModelStat> TModelStats { get; set; }
         public virtual DbSet<TModelType> TModelTypes { get; set; }
         public virtual DbSet<TModelWargear> TModelWargears { get; set; }
         public virtual DbSet<TModelWeapon> TModelWeapons { get; set; }
         public virtual DbSet<TRiteOfWar> TRiteOfWars { get; set; }
         public virtual DbSet<TRule> TRules { get; set; }
         public virtual DbSet<TRuleCategory> TRuleCategories { get; set; }
+        public virtual DbSet<TSource> TSources { get; set; }
         public virtual DbSet<TSpecialRule> TSpecialRules { get; set; }
-        public virtual DbSet<TStat> TStats { get; set; }
         public virtual DbSet<TUnit> TUnits { get; set; }
         public virtual DbSet<TUnitCompositionModel> TUnitCompositionModels { get; set; }
         public virtual DbSet<TUnitCompositionWargear> TUnitCompositionWargears { get; set; }
@@ -46,6 +45,8 @@ namespace AoDPedia_Site
         {
             if (!optionsBuilder.IsConfigured)
             {
+#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
+                optionsBuilder.UseSqlServer("Data Source=(localdb)\\ProjectsV13;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False;Initial Catalog=AoDPedia");
             }
         }
 
@@ -79,9 +80,68 @@ namespace AoDPedia_Site
 
                 entity.Property(e => e.Id).ValueGeneratedNever();
 
+                entity.Property(e => e.Attacks)
+                    .HasMaxLength(10)
+                    .IsFixedLength(true);
+
+                entity.Property(e => e.AvFront)
+                    .HasMaxLength(10)
+                    .HasColumnName("AV_Front")
+                    .IsFixedLength(true);
+
+                entity.Property(e => e.AvRear)
+                    .HasMaxLength(10)
+                    .HasColumnName("AV_Rear")
+                    .IsFixedLength(true);
+
+                entity.Property(e => e.AvSide)
+                    .HasMaxLength(10)
+                    .HasColumnName("AV_Side")
+                    .IsFixedLength(true);
+
+                entity.Property(e => e.BallisticSkill)
+                    .HasMaxLength(10)
+                    .HasColumnName("Ballistic_Skill")
+                    .IsFixedLength(true);
+
+                entity.Property(e => e.HullPoints).HasColumnType("ntext");
+
+                entity.Property(e => e.Initiative)
+                    .HasMaxLength(10)
+                    .IsFixedLength(true);
+
+                entity.Property(e => e.Leadership)
+                    .HasMaxLength(10)
+                    .IsFixedLength(true);
+
+                entity.Property(e => e.Movement)
+                    .HasMaxLength(10)
+                    .IsFixedLength(true);
+
                 entity.Property(e => e.Name)
                     .HasMaxLength(10)
                     .IsFixedLength(true);
+
+                entity.Property(e => e.Save)
+                    .HasMaxLength(10)
+                    .IsFixedLength(true);
+
+                entity.Property(e => e.SourcePage).HasColumnName("Source_Page");
+
+                entity.Property(e => e.Strength)
+                    .HasMaxLength(10)
+                    .IsFixedLength(true);
+
+                entity.Property(e => e.Toughness)
+                    .HasMaxLength(10)
+                    .IsFixedLength(true);
+
+                entity.Property(e => e.WeaponSkill)
+                    .HasMaxLength(10)
+                    .HasColumnName("Weapon_Skill")
+                    .IsFixedLength(true);
+
+                entity.Property(e => e.Wounds).HasColumnType("ntext");
             });
 
             modelBuilder.Entity<TModelModelType>(entity =>
@@ -104,17 +164,6 @@ namespace AoDPedia_Site
                 entity.Property(e => e.ModelId).HasColumnName("Model_Id");
 
                 entity.Property(e => e.SpecialRuleId).HasColumnName("Special_Rule_Id");
-            });
-
-            modelBuilder.Entity<TModelStat>(entity =>
-            {
-                entity.ToTable("T_Model_Stats");
-
-                entity.Property(e => e.Id).ValueGeneratedNever();
-
-                entity.Property(e => e.ModelId).HasColumnName("Model_Id");
-
-                entity.Property(e => e.StatId).HasColumnName("Stat_Id");
             });
 
             modelBuilder.Entity<TModelType>(entity =>
@@ -169,11 +218,13 @@ namespace AoDPedia_Site
 
                 entity.Property(e => e.Name).HasMaxLength(50);
 
-                entity.Property(e => e.RuleCategoryId).HasColumnName("Rule_Category_Id");
+                entity.Property(e => e.ParentId).HasColumnName("Parent_Id");
 
-                entity.Property(e => e.RuleType)
-                    .HasMaxLength(50)
-                    .HasColumnName("Rule_Type");
+                entity.Property(e => e.RuleType).HasColumnName("Rule_Type");
+
+                entity.Property(e => e.SourceId).HasColumnName("Source_Id");
+
+                entity.Property(e => e.SourcePage).HasColumnName("Source_Page");
             });
 
             modelBuilder.Entity<TRuleCategory>(entity =>
@@ -185,6 +236,17 @@ namespace AoDPedia_Site
                 entity.Property(e => e.Name).HasMaxLength(50);
 
                 entity.Property(e => e.ParentId).HasColumnName("Parent_Id");
+            });
+
+            modelBuilder.Entity<TSource>(entity =>
+            {
+                entity.ToTable("T_Source");
+
+                entity.Property(e => e.Id).ValueGeneratedNever();
+
+                entity.Property(e => e.Abbreviation)
+                    .HasMaxLength(10)
+                    .IsFixedLength(true);
             });
 
             modelBuilder.Entity<TSpecialRule>(entity =>
@@ -200,20 +262,15 @@ namespace AoDPedia_Site
                 entity.Property(e => e.Rules).IsUnicode(false);
             });
 
-            modelBuilder.Entity<TStat>(entity =>
-            {
-                entity.ToTable("T_Stat");
-
-                entity.Property(e => e.Id).ValueGeneratedNever();
-
-                entity.Property(e => e.Name).HasMaxLength(50);
-            });
-
             modelBuilder.Entity<TUnit>(entity =>
             {
                 entity.ToTable("T_Unit");
 
                 entity.Property(e => e.Id).ValueGeneratedNever();
+
+                entity.Property(e => e.Role).HasMaxLength(25);
+
+                entity.Property(e => e.SourcePage).HasColumnName("Source_Page");
             });
 
             modelBuilder.Entity<TUnitCompositionModel>(entity =>
@@ -313,6 +370,8 @@ namespace AoDPedia_Site
                     .HasColumnName("AP")
                     .IsFixedLength(true);
 
+                entity.Property(e => e.ArmyId).HasColumnName("Army_Id");
+
                 entity.Property(e => e.Name)
                     .HasMaxLength(10)
                     .IsFixedLength(true);
@@ -321,10 +380,9 @@ namespace AoDPedia_Site
                     .HasMaxLength(10)
                     .IsFixedLength(true);
 
-                entity.Property(e => e.SpecialRules)
-                    .HasMaxLength(10)
-                    .HasColumnName("Special Rules")
-                    .IsFixedLength(true);
+                entity.Property(e => e.SourceId).HasColumnName("Source_Id");
+
+                entity.Property(e => e.SourcePage).HasColumnName("Source_Page");
 
                 entity.Property(e => e.Strength)
                     .HasMaxLength(10)

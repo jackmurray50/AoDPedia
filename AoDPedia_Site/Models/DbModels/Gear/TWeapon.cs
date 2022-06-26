@@ -13,6 +13,8 @@ namespace AoDPedia_Site
         public string Strength { get; set; }
         public string Ap { get; set; }
         public string Type { get; set; }
-        public string SpecialRules { get; set; }
+        public Guid? ArmyId { get; set; }
+        public Guid? SourceId { get; set; }
+        public int? SourcePage { get; set; }
     }
 }

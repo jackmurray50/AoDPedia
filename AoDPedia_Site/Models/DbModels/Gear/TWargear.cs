@@ -5,14 +5,11 @@ using System.Collections.Generic;
 
 namespace AoDPedia_Site
 {
-    public partial class TUnit
+    public partial class TWargear
     {
         public Guid Id { get; set; }
         public string Name { get; set; }
-        public int? Cost { get; set; }
-        public string Role { get; set; }
         public string Fluff { get; set; }
-        public Guid? Source { get; set; }
-        public int? SourcePage { get; set; }
+        public string Rules { get; set; }
     }
 }
