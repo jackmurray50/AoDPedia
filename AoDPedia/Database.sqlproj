@@ -9,8 +9,7 @@
     <ProjectGuid>{9984ba57-d0d3-4245-be84-a73541e1a003}</ProjectGuid>
     <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
-    <RootPath>
-    </RootPath>
+    <RootPath />
     <RootNamespace>AoDPedia</RootNamespace>
     <AssemblyName>AoDPedia</AssemblyName>
     <ModelCollation>1033, CI</ModelCollation>
@@ -48,7 +47,6 @@
   </PropertyGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
-    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
     <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
     <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
   </PropertyGroup>
@@ -102,5 +100,7 @@
     <None Include="Data\T_Rule_Category.csv" />
     <None Include="Data\Source.csv" />
     <None Include="Data\Units.csv" />
+    <None Include="Database.publish.xml" />
+    <None Include="Database_1.publish.xml" />
   </ItemGroup>
 </Project>
