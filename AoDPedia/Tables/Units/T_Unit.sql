@@ -1,10 +1,16 @@
 ﻿CREATE TABLE [dbo].[T_Unit]
 (
-	[Id] UNIQUEIDENTIFIER NOT NULL PRIMARY KEY, 
+	[Id] UNIQUEIDENTIFIER NOT NULL, 
     [Name] NVARCHAR(MAX) NULL, 
     [Cost] INT NULL, 
     [Role] NVARCHAR(25) NULL,
     [Fluff] NVARCHAR(MAX) NULL, 
     [Source] UNIQUEIDENTIFIER NULL, 
-    [Source_Page] INT NULL
+    [Source_Page] INT NULL,
+    [Row_Id] INT IDENTITY(1,1) NOT NULL,
+    CONSTRAINT [PK_T_Unit_Id] PRIMARY KEY NONCLUSTERED ([Id])
 )
+
+GO
+
+CREATE UNIQUE INDEX [CIX_T_Unit_Column] ON [dbo].[T_Unit] ([ROW_ID])
